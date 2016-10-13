@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing cache-js</title>
+	<script src="cache-js.min.js"></script>
+</head>
+<body>
+	<script>
+		var  resources = [
+			//Scripts
+			{"uri":"//cdn.datatables.net/v/bs-3.3.6/jq-2.2.3/dt-1.10.12/r-2.1.0/sc-1.4.2/datatables.min.js","type":"script", "name":"datatables_combo.js", "version":"0.1"},
+			{"uri":"//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.5.2/metisMenu.min.js","type":"script", "name":"metisMenu.js", "version":"2.5.2"},
+			{"uri":"//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js","type":"script", "name":"toastr.js", "version":"2.1.3"},
+			//Styles
+			{"uri":"//cdn.datatables.net/v/bs-3.3.6/jq-2.2.3/dt-1.10.12/r-2.1.0/sc-1.4.2/datatables.min.css","type":"style", "name":"datatables_combo_css", "version":"0.1"},
+			{"uri":"//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css","type":"style", "name":"toastr.css", "version":"2.1.3"},
+			{"uri":"//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.5.2/metisMenu.min.css","type":"style", "name":"metisMenu.css", "version":"2.5.2"}
+		];
+		_cache(resources, function(){
+			alert('Finished Loading :)');
+		});
+	</script>
+</body>
+</html>

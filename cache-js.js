@@ -1,6 +1,6 @@
 /*
 *	© Aymane Taibi 2016
-*	github/justmeziko/cacheres
+*	github/nimda95/cacheres
 *	This script uses the HTML5 localStorage API to cache css and js files instead of the normal browser cache.
 */
 var _loaded=function(){},_injectFile=function(t,c,s){
